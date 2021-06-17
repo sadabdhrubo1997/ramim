@@ -1,0 +1,12 @@
+#header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    .menubar{
+        .wrapper{
+            height: 7.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

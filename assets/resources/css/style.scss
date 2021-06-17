@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 59.28%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+@import 'header'
