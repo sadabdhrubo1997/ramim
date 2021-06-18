@@ -1,6 +1,40 @@
 #header {
-    background:linear-gradient(261.11deg, #77CABA 0%, #229A87 90.84%);;
-    border-bottom-left-radius: 15rem;
+    background: linear-gradient(261.11deg, #77CABA 0%, #229A87 90.84%);
+    ;
+    border-bottom-left-radius: 10rem;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: -19.5rem;
+        bottom: -15rem;
+        height: 39rem;
+        width: 39rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 99;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: -7rem;
+        bottom: 17rem;
+        height: 14rem;
+        width: 14rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 99;
+    }
 
     .menubar {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -74,6 +108,8 @@
     }
 
     .heroArea {
+        position: relative;
+        z-index: 999;
 
         .wrapper {
             width: 100%;
