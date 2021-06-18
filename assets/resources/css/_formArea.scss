@@ -39,14 +39,84 @@
                 justify-content: space-between;
 
                 .top {
-                    font-size: 1.6rem;
-                    color: rgba(18, 18, 18, 0.6);
-                    transition: .3s;
-                    -webkit-transition: .3s;
-                    -moz-transition: .3s;
-                    -ms-transition: .3s;
-                    -o-transition: .3s;
                     cursor: pointer;
+                    position: relative;
+                    border: none;
+                    background: none;
+                    outline:none;
+                    display: block;
+                    text-align: left;
+
+                    span {
+                        font-size: 1.6rem;
+                        color: rgba(18, 18, 18, 0.6);
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                    }
+
+                    ul {
+                        width: 100%;
+                        position: absolute;
+                        top: 2rem;
+                        background-color: #fff;
+                        list-style: none;
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                        opacity: 0;
+                        visibility: hidden;
+                        padding: 1.5rem;
+                        padding-bottom: .5rem;
+                        box-shadow: .5rem 1rem 80px rgba(0, 0, 0, 0.1);
+
+
+
+                        li {
+                            font-size: 1.6rem;
+                            margin-bottom: 1rem;
+                            display: block;
+
+                            input[type="radio"] {
+                                display: none;
+                                pointer-events:none;
+                            }
+
+                            label {
+                                font-size: 1.6rem;
+                                transition: .3s;
+                                -webkit-transition: .3s;
+                                -moz-transition: .3s;
+                                -ms-transition: .3s;
+                                -o-transition: .3s;
+                                cursor: pointer;
+                                display: block;
+                                text-align: left;
+
+                                &:hover{
+                                    color: green;
+                                }
+                                
+    
+}
+
+
+                            input[type="radio"]:checked+label {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    ul.show {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+
 
                     img {
                         width: 1.2rem;
@@ -66,10 +136,12 @@
                     }
 
 
-                    &:hover{
-                        color: rgba(18, 18, 18, 1);
+                    &:hover {
+                        span {
+                            color: rgba(18, 18, 18, 1);
+                        }
 
-                        img{
+                        img {
                             opacity: 1;
                         }
 

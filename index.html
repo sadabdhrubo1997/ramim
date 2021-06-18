@@ -60,13 +60,25 @@
         <form class="wrapper">
             <div class="left">
                 <div class="subject">
-                    <div class="top">Select Subject <img src="./assets/resources/icons/formDownArrow.svg" alt=""></div>
-                    <div class="bottom">Mathematics</div>
+                    <button type="button" class="top" id="selectSubject"><span>Select Subject</span> <img src="./assets/resources/icons/formDownArrow.svg" alt="">
+                        <ul id="subjectDropdown">
+                            <li><input type="radio" value="Bangla" name="subject" id="bangla"><label for="bangla">Bangla</label></li>
+                            <li><input type="radio" value="English" name="subject" id="english"><label for="english">English</label></li>
+                            <li><input type="radio" value="Math" name="subject" id="math"><label for="math">Math</label></li>                           
+                        </ul>
+                    </button>
+                    <div class="bottom" id="selectedSubject">No Selected</div>
                 </div>
                 <span class="line"></span>
                 <div class="class">
-                    <div class="top">Select Class <img src="./assets/resources/icons/formDownArrow.svg" alt=""></div>
-                    <div class="bottom">Three</div>
+                    <button type="button" class="top" id="selectClass"><span>Select Class</span> <img src="./assets/resources/icons/formDownArrow.svg" alt="">
+                        <ul id="classDropdown">
+                            <li><input type="radio" value="One" name="class" id="one"><label for="one">One</label></li>
+                            <li><input type="radio" value="Two" name="class" id="two"><label for="two">Two</label></li>
+                            <li><input type="radio" value="Three" name="class" id="three"><label for="three">Three</label></li>                           
+                        </ul>
+                    </button>
+                    <div class="bottom" id="selectedClass">No Selected</div>
                 </div>
             </div>
             <div class="right">
@@ -75,10 +87,18 @@
         </form>
 
     </div>
+<br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div id="hudai">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate, nostrum velit magnam vitae excepturi recusandae odio mollitia quod eos iure deleniti possimus quasi maxime dignissimos, voluptatibus, earum quaerat suscipit.
+        </div>
+    </div>
 
     <div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
+    <script src="./assets/vendors/js/jq.js"></script>
+    <script src="./assets/resources/js/main.js"></script>
 </body>
 
 </html>
