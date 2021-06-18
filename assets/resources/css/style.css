@@ -8,6 +8,7 @@
 html {
   font-size: 59.28%;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -16,7 +17,12 @@ html {
 }
 
 #header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(261.11deg, #77CABA 0%, #229A87 90.84%);
+  border-bottom-left-radius: 15rem;
+}
+
+#header .menubar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #header .menubar .wrapper {
@@ -31,5 +37,128 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#header .menubar .wrapper a {
+  width: 4rem;
+  height: auto;
+}
+
+#header .menubar .wrapper a img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .menubar .wrapper .btn_wrapper .btn {
+  display: inline;
+  padding: 1rem 4rem;
+  border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -ms-border-radius: .6rem;
+  -o-border-radius: .6rem;
+  border: .1rem solid #ffffff;
+  margin: 0 .6rem;
+}
+
+#header .menubar .wrapper .btn_wrapper a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#header .menubar .wrapper .btn_wrapper a.login {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+}
+
+#header .menubar .wrapper .btn_wrapper a.login:hover {
+  background-color: #fff;
+  color: #282929;
+}
+
+#header .menubar .wrapper .btn_wrapper a.registration {
+  background-color: #f9ed35;
+  color: #282929;
+  border-color: #f9ed35;
+}
+
+#header .menubar .wrapper .btn_wrapper a.registration:hover {
+  background-color: #e7da23;
+  color: #282929;
+  border-color: #e7da23;
+}
+
+#header .heroArea .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .heroArea .wrapper .left {
+  width: 56.5%;
+  padding-top: 4.5rem;
+}
+
+#header .heroArea .wrapper .left h1 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.3;
+  margin-bottom: 1.7rem;
+}
+
+#header .heroArea .wrapper .left p {
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+#header .heroArea .wrapper .left a.studentBtn {
+  display: inline-block;
+  text-decoration: none;
+  color: #282929;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #f9ed35;
+  padding: 1.2rem 4.5rem;
+  border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -ms-border-radius: .6rem;
+  -o-border-radius: .6rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#header .heroArea .wrapper .left a.studentBtn:hover {
+  background-color: #e7da23;
+}
+
+#header .heroArea .wrapper .right {
+  width: calc(100% - (56.5% + 6rem));
+}
+
+#header .heroArea .wrapper .right img {
+  width: 120%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: -5rem;
 }
 /*# sourceMappingURL=style.css.map */
