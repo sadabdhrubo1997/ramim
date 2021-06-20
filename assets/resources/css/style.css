@@ -846,4 +846,116 @@ html {
   line-height: 2.4rem;
   color: #414947;
 }
+
+#footer {
+  margin-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+#footer .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .wrapper .logo {
+  max-width: 16rem;
+}
+
+#footer .wrapper .logo a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#footer .wrapper .logo a img {
+  width: 100%;
+  height: auto;
+}
+
+#footer .wrapper .common h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #282929;
+  margin-bottom: 2.5rem;
+}
+
+#footer .wrapper .common ul {
+  list-style: none;
+}
+
+#footer .wrapper .common ul li {
+  margin-bottom: 1.8rem;
+}
+
+#footer .wrapper .common ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #535353;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#footer .wrapper .common ul li a:hover {
+  color: #229a87;
+}
+
+#footer .wrapper .common .socialWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .wrapper .common .socialWrapper a {
+  height: 4.4rem;
+  width: 4.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0.3rem 8px rgba(216, 218, 225, 0.8);
+          box-shadow: 0px 0.3rem 8px rgba(216, 218, 225, 0.8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -ms-border-radius: .6rem;
+  -o-border-radius: .6rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#footer .wrapper .common .socialWrapper a svg {
+  height: 1.8rem;
+  width: auto;
+  fill: #505857;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#footer .wrapper .common .socialWrapper a:hover svg {
+  fill: #229a87;
+}
 /*# sourceMappingURL=style.css.map */
