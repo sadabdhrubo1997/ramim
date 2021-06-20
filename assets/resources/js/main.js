@@ -52,3 +52,27 @@ classDropdownItem.forEach((item) => {
 
 
 // class selection end
+
+
+
+
+
+
+//image slider 
+
+$("#slider").slick({
+    slidesToShow:3,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: false,
+    autoplaySpeed:5000,
+    dots:true
+})
+
+
+
+
+
+
+
+//image slider end 

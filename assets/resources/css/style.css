@@ -701,4 +701,149 @@ html {
 #whyUs .btnWrapper a:hover {
   background-color: #e7da23;
 }
+
+#withNess {
+  padding-top: 8rem;
+  overflow-x: hidden;
+}
+
+#withNess h2 {
+  text-align: center;
+  font-size: 3.6rem;
+  color: #0f947f;
+  font-weight: 600;
+  position: relative;
+}
+
+#withNess h2::before {
+  position: absolute;
+  content: '';
+  top: -1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 3.4rem;
+  height: 2.3rem;
+  background-image: url(./../images/withnessAfter.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#withNess .sliderWrapper {
+  margin-top: 8rem;
+  overflow-x: unset;
+}
+
+#withNess .sliderWrapper .slick-list {
+  overflow: unset;
+}
+
+#withNess .sliderWrapper .slick-list .slick-track .slick-slide {
+  opacity: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+#withNess .sliderWrapper .slick-list .slick-track .slick-slide.slick-active {
+  opacity: 1;
+}
+
+#withNess .sliderWrapper .slick-dots {
+  margin-top: 8rem;
+}
+
+#withNess .sliderWrapper .slick-dots li {
+  background-color: #e9f7f4;
+  height: .8rem;
+  width: 1.5rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+#withNess .sliderWrapper .slick-dots li button {
+  display: none;
+}
+
+#withNess .sliderWrapper .slick-dots li.slick-active {
+  width: 3.2rem;
+  background-color: #229a87;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper {
+  padding: 2.4rem;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0.5rem 0 30px rgba(185, 213, 208, 0.5);
+          box-shadow: 0.5rem 0 30px rgba(185, 213, 208, 0.5);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 3rem;
+  position: relative;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider::before {
+  position: absolute;
+  content: '';
+  top: -1.2rem;
+  left: 3rem;
+  height: 3rem;
+  width: 4.5rem;
+  background-image: url(../icons/quote.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider .top img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider .top p.name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #282929;
+}
+
+#withNess .sliderWrapper .singleSliderWrapper .singleSlider p.desc {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  color: #414947;
+}
 /*# sourceMappingURL=style.css.map */
