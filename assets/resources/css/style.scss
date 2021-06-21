@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 59.28%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
 
-.container{
+.container {
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -24,3 +24,12 @@ html{
 @import './withness';
 @import './footer';
 
+
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+}

@@ -20,6 +20,7 @@ html {
   background: linear-gradient(261.11deg, #77CABA 0%, #229A87 90.84%);
   border-bottom-left-radius: 10rem;
   position: relative;
+  padding-bottom: 0;
 }
 
 #header:after {
@@ -141,11 +142,17 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #header .heroArea .wrapper .left {
   width: 56.5%;
   padding-top: 4.5rem;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 #header .heroArea .wrapper .left h1 {
@@ -156,6 +163,7 @@ html {
   font-size: 56px;
   line-height: 1.3;
   margin-bottom: 1.7rem;
+  text-align: left;
 }
 
 #header .heroArea .wrapper .left p {
@@ -163,6 +171,7 @@ html {
   color: #fff;
   line-height: 1.9;
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 #header .heroArea .wrapper .left a.studentBtn {
@@ -191,6 +200,9 @@ html {
 
 #header .heroArea .wrapper .right {
   width: calc(100% - (56.5% + 6rem));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #header .heroArea .wrapper .right img {
@@ -198,6 +210,79 @@ html {
   height: auto;
   display: inline-block;
   margin-bottom: -5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    border-bottom-left-radius: 6rem;
+    padding-bottom: 5rem;
+  }
+  #header::after, #header::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #header .heroArea .wrapper .left {
+    width: 48%;
+  }
+  #header .heroArea .wrapper .left h1 {
+    font-size: 4.5rem;
+  }
+  #header .heroArea .wrapper .right {
+    width: 48%;
+  }
+  #header .heroArea .wrapper .right img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    border-bottom-left-radius: 4rem;
+  }
+  #header .heroArea .wrapper .left h1 {
+    font-size: 3.8rem;
+  }
+  #header .heroArea .wrapper .left p {
+    font-size: 1.6rem;
+  }
+  #header .heroArea .wrapper .right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #header .menubar .wrapper {
+    height: 6rem;
+  }
+  #header .menubar .wrapper .btn_wrapper .btn {
+    padding: .8rem 2.5rem;
+  }
+  #header .heroArea .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header .heroArea .wrapper .left, #header .heroArea .wrapper .right {
+    width: 100%;
+  }
+  #header .heroArea .wrapper .left {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  #header .heroArea .wrapper .left h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  #header .heroArea .wrapper .left p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
 
 #formArea {
@@ -407,6 +492,66 @@ html {
   background-color: #e7da23;
 }
 
+@media screen and (max-width: 768px) {
+  #formArea {
+    max-width: 95%;
+  }
+  #formArea .wrapper .bottom {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #formArea {
+    height: 6.5rem;
+    padding: 1rem;
+  }
+  #formArea .wrapper .left {
+    width: 60%;
+  }
+  #formArea .wrapper .left .class button.top,
+  #formArea .wrapper .left .subject button.top {
+    display: block;
+  }
+  #formArea .wrapper .left .class button.top span,
+  #formArea .wrapper .left .subject button.top span {
+    font-size: 1.4rem;
+  }
+  #formArea .wrapper .left .class .bottom,
+  #formArea .wrapper .left .subject .bottom {
+    font-size: 1.6rem;
+  }
+  #formArea .wrapper .right {
+    width: 33%;
+  }
+  #formArea .wrapper .right button {
+    display: block;
+    font-size: 1.4rem;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    padding: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #formArea {
+    height: 6.5rem;
+    padding: 1rem;
+  }
+  #formArea .wrapper .left {
+    width: 64%;
+  }
+  #formArea .wrapper .right {
+    width: 30%;
+  }
+  #formArea .wrapper .right button {
+    font-size: 1.2rem;
+  }
+}
+
 #subjectSection {
   margin-top: 7rem;
 }
@@ -542,6 +687,57 @@ html {
 
 #subjectSection .btnWrapper a:hover {
   background-color: #e7da23;
+}
+
+@media screen and (max-width: 768px) {
+  #subjectSection h2 {
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+  }
+  #subjectSection .itemWrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #subjectSection .itemWrapper .singleItem {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #subjectSection .itemWrapper .singleItem {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #subjectSection h2 {
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
+  }
+  #subjectSection .itemWrapper .singleItem {
+    width: 47%;
+  }
+  #subjectSection .itemWrapper .singleItem p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #subjectSection .itemWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #subjectSection .itemWrapper .singleItem {
+    width: 80%;
+  }
+  #subjectSection .itemWrapper .singleItem p {
+    font-size: 1.8rem;
+  }
+  #subjectSection .btnWrapper a::after, #subjectSection .btnWrapper a::before {
+    display: none;
+  }
 }
 
 #whyUs {
@@ -859,24 +1055,34 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 #footer .wrapper .logo {
-  max-width: 16rem;
+  width: 16rem;
+  margin-bottom: 0;
 }
 
 #footer .wrapper .logo a {
   display: block;
   width: 100%;
+  max-width: 16rem;
   height: auto;
 }
 
 #footer .wrapper .logo a img {
   width: 100%;
   height: auto;
+}
+
+#footer .wrapper .common {
+  margin-bottom: 0;
 }
 
 #footer .wrapper .common h3 {
@@ -957,5 +1163,39 @@ html {
 
 #footer .wrapper .common .socialWrapper a:hover svg {
   fill: #229a87;
+}
+
+@media screen and (max-width: 768px) {
+  #footer .wrapper .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  #footer .wrapper .common {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #footer .wrapper .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  #footer .wrapper .common {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
