@@ -65,7 +65,7 @@
 
     }
 
-    
+
     .btnWrapper {
         width: 100%;
         display: flex;
@@ -137,6 +137,14 @@
             &:hover {
                 background-color: rgb(231, 218, 35);
             }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    #whyUs {
+        .singleItem {
+            margin-bottom: 2rem;
         }
     }
 }

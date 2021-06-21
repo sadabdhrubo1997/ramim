@@ -898,6 +898,12 @@ html {
   background-color: #e7da23;
 }
 
+@media screen and (max-width: 576px) {
+  #whyUs .singleItem {
+    margin-bottom: 2rem;
+  }
+}
+
 #withNess {
   padding-top: 8rem;
   overflow-x: hidden;
